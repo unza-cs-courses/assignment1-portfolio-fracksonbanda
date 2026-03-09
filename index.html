@@ -3,43 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <meta name="description" content="Professional portfolio website for Frackson Banda - Software Engineering Student">
+    <title>Frackson Banda - Software Engineering Student</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!--
-    ============================================================
-    ASSIGNMENT 1: RESPONSIVE PORTFOLIO WEBSITE
-    CSC4035 Web Programming and Technologies
-
-    Instructions:
-    1. Complete all TODO sections below
-    2. Use semantic HTML5 elements
-    3. Ensure all images have alt attributes
-    4. Ensure all form inputs have labels
-    5. Test responsiveness at multiple breakpoints
-    ============================================================
-    -->
-
     <!-- Navigation -->
     <header class="header">
-        <nav class="nav">
-            <!-- TODO: Create navigation with links to each section
-                 Requirements:
-                 - Logo/site title
-                 - Navigation links (Home, About, Projects, Contact)
-                 - Mobile-friendly (hamburger menu optional)
-                 - Active state indication
-            -->
+        <nav class="nav container">
             <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
+                <a href="#home">FRACKSON BANDA</a>
             </div>
             <ul class="nav__menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -47,61 +26,47 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <!-- TODO: Create hero section
-                 Requirements:
-                 - Your name (h1)
-                 - Professional tagline
-                 - Call-to-action button
-                 - Consider using Flexbox for layout
-            -->
             <div class="hero__content">
-                <h1>Your Name</h1>
+                <h1>Frackson Banda</h1>
                 <p class="hero__tagline">
-                    <!-- TODO: Add your professional tagline -->
-                    Web Developer | Designer | Problem Solver
+                    Software Engineering Student | Linux Certified | Web Developer
                 </p>
-                <a href="#contact" class="btn btn--primary">Get In Touch</a>
+                <div class="hero__buttons">
+                    <a href="#contact" class="btn btn--primary">Hire Me</a>
+                    <a href="#projects" class="btn btn--outline">View Projects</a>
+                </div>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="about">
-            <!-- TODO: Create about section
-                 Requirements:
-                 - Section heading (h2)
-                 - Profile image with alt text
-                 - Professional bio (150+ words)
-                 - Skills list
-                 - Use CSS Grid or Flexbox for layout
-            -->
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about__content">
                     <div class="about__image">
-                        <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
+                        <img src="images/profile.jpeg" alt="Profile photo of Frackson Banda - Software Engineering Student">
                     </div>
                     <div class="about__text">
                         <p>
-                            <!-- TODO: Write your professional bio (150+ words)
-                                 Include:
-                                 - Your background
-                                 - Your interests in web development
-                                 - Your goals
-                                 - What makes you unique
-                            -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
+                            I'm a 4th year Software Engineering student at the University of Zambia with a passion for building efficient and user-friendly applications. My journey into tech began with certifications in Linux, Cisco Networking, and IT Essentials, which gave me a strong foundation in computer systems and networks.
                         </p>
-                        <h3>Skills</h3>
+                        <p>
+                            Currently, I focus on full-stack development using Java, JavaScript, and modern web technologies. I enjoy solving complex problems and have developed several projects including library management systems, point of sale applications, and real-time weather websites. My academic coursework in Data Structures, Computer Networks, and Database Systems has equipped me with the theoretical knowledge to complement my practical skills.
+                        </p>
+                        <p>
+                            Beyond coding, I enjoy gaming, exploring the outdoors, going to different places and love trying new foods. I'm constantly learning and looking for opportunities to apply my skills in real-world scenarios. My goal is to become a software engineer who creates impactful solutions that improve people's lives.
+                        </p>
+                        <h3>Technical Skills</h3>
                         <ul class="skills-list">
-                            <!-- TODO: Add your skills -->
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
+                            <li>Java (Advanced)</li>
+                            <li>Python (Intermediate)</li>
+                            <li>JavaScript (Intermediate)</li>
+                            <li>HTML5 & CSS3</li>
+                            <li>Linux (Ubuntu)</li>
+                            <li>Networking (TCP/IP)</li>
+                            <li>Cisco Packet Tracer</li>
+                            <li>MySQL</li>
                             <li>Responsive Design</li>
-                            <!-- Add more skills -->
                         </ul>
                     </div>
                 </div>
@@ -110,28 +75,19 @@
 
         <!-- Projects Section -->
         <section id="projects" class="projects">
-            <!-- TODO: Create projects section
-                 Requirements:
-                 - Section heading (h2)
-                 - Minimum 3 project cards
-                 - Each card: image, title, description, link(s)
-                 - Use CSS Grid for card layout
-            -->
             <div class="container">
                 <h2>My Projects</h2>
                 <div class="projects__grid">
                     <!-- Project Card 1 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
+                        <img src="images/library.jpg" alt="Library Management System desktop application interface">
                         <div class="project-card__content">
-                            <h3>Project Title 1</h3>
+                            <h3>Library Management System</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A comprehensive Java/MySQL application that automates book tracking, user authentication, and complete CRUD operations. Features include book search, borrowing history, and fine calculation.
                             </p>
                             <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--primary">Live Demo</a>
                                 <a href="#" class="btn btn--small btn--outline">GitHub</a>
                             </div>
                         </div>
@@ -139,16 +95,14 @@
 
                     <!-- Project Card 2 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
+                        <img src="images/supermarket.png" alt="Supermarket Point of Sale desktop application">
                         <div class="project-card__content">
-                            <h3>Project Title 2</h3>
+                            <h3>Supermarket POS System</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A desktop point-of-sale application for supermarkets with inventory management, sales tracking, receipt generation, and user roles. Built with Java and MySQL database integration.
                             </p>
                             <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--primary">Live Demo</a>
                                 <a href="#" class="btn btn--small btn--outline">GitHub</a>
                             </div>
                         </div>
@@ -156,105 +110,129 @@
 
                     <!-- Project Card 3 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
+                        <img src="images/weather.png" alt="Real-time weather website interface">
                         <div class="project-card__content">
-                            <h3>Project Title 3</h3>
+                            <h3>Real-Time Weather Website</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A responsive weather application that displays real-time weather data using API integration. Users can search by city and view temperature, humidity, wind speed, and forecasts.
                             </p>
                             <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--primary">Live Demo</a>
                                 <a href="#" class="btn btn--small btn--outline">GitHub</a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- TODO: Add more project cards if desired -->
+                    <!-- Project Card 4 -->
+                    <article class="project-card">
+                        <img src="images/HR.png" alt="Human Resource Management application interface">
+                        <div class="project-card__content">
+                            <h3>HR Management Application</h3>
+                            <p>
+                                A web-based HR system for employee management, leave tracking, payroll processing, and performance reviews. Features include role-based access and report generation.
+                            </p>
+                            <div class="project-card__links">
+                                <a href="#" class="btn btn--small btn--primary">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact">
-            <!-- TODO: Create contact section
-                 Requirements:
-                 - Section heading (h2)
-                 - Contact form with:
-                   - Name field (required)
-                   - Email field (required, type="email")
-                   - Message textarea (required)
-                   - Submit button
-                 - All inputs must have associated labels
-                 - Use HTML5 validation attributes
-            -->
             <div class="container">
                 <h2>Contact Me</h2>
-                <form class="contact__form" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                            placeholder="Your Name"
-                            minlength="2"
-                        >
+                <div class="contact__wrapper">
+                    <div class="contact__info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm currently looking for internship opportunities and collaboration on interesting projects. Feel free to reach out!</p>
+                        <ul class="contact__details">
+                            <li>
+                                <span class="contact__label">Email:</span>
+                                <a href="mailto:bmikala0@gmail.com">bmikala0@gmail.com</a>
+                            </li>
+                            <li>
+                                <span class="contact__label">Phone:</span>
+                                <a href="tel:+260972716142">+260 972 716 142</a>
+                            </li>
+                            <li>
+                                <span class="contact__label">Facebook:</span>
+                                <a href="https://www.facebook.com/frackson.bandajunior" target="_blank" rel="noopener noreferrer">Fracksen Njekwa</a>
+                            </li>
+                            <li>
+                                <span class="contact__label">Location:</span>
+                                Lusaka, Zambia
+                            </li>
+                            <li>
+                                <span class="contact__label">LinkedIn:</span>
+                                <a href="#">linkedin.com/in/frackson-banda</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                            placeholder="your.email@example.com"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            placeholder="What is this regarding?"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            required
-                            rows="5"
-                            placeholder="Your message..."
-                            minlength="10"
-                        ></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary">Send Message</button>
-                </form>
+                    <form class="contact__form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                placeholder="Your full name"
+                                minlength="2"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="your.email@example.com"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What is this regarding?"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                required
+                                rows="5"
+                                placeholder="Your message..."
+                                minlength="10"
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <!-- TODO: Create footer
-             Requirements:
-             - Copyright notice
-             - Social media links (optional)
-             - Back to top link (optional)
-        -->
         <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-            <nav class="footer__social">
-                <!-- TODO: Add your social media links -->
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="Twitter">Twitter</a>
-            </nav>
+            <div class="footer__content">
+                <p>&copy; 2026 Frackson Banda. All rights reserved.</p>
+                <nav class="footer__social">
+                    <a href="https://github.com/fracksonbanda" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                    <a href="https://www.linkedin.com/in/frackson-banda" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://www.facebook.com/frackson.bandajunior" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+                </nav>
+                <a href="#home" class="back-to-top">Back to Top ↑</a>
+            </div>
         </div>
     </footer>
 </body>

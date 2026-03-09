@@ -1,165 +1,134 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/8NpkA7e4)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=23041087&assignment_repo_type=AssignmentRepo)
-# Assignment 1: Responsive Portfolio Website
+# Frackson Banda - Responsive Portfolio Website
 
-**Course:** CSC4035 Web Programming and Technologies
-**Weight:** 5% of final grade
-**Due:** Week 6, Friday 11:59 PM
+## Student Information
+- **Name:** Frackson Banda
+- **Student ID:** 2022003578
+- **Course:** CSC4035 Web Programming and Technologies
+- **Assignment:** 1 - Responsive Portfolio Website
 
----
+## About This Project
+This is my personal portfolio website for the Web Programming assignment. I built it using HTML and CSS only - no Bootstrap or other frameworks. The content is based on my actual CV as a 4th year Software Engineering student at UNZA.
 
-## Overview
+## What's Inside
 
-Create a professional, responsive portfolio website showcasing your skills, projects, and contact information. This assignment assesses your HTML5 and CSS3 skills, including semantic markup, modern layout techniques (Flexbox/Grid), and responsive design principles.
+### Sections
+1. **Home** - My name, tagline, and buttons to hire me or view projects
+2. **About** - My background, skills from my CV (Java, Python, Linux, etc.)
+3. **Projects** - 4 projects I've worked on (Library System, POS, Weather App, HR App)
+4. **Contact** - Form and my contact details from my CV
 
-**Important:** No CSS frameworks (Bootstrap, Tailwind, etc.) are allowed. All CSS must be hand-written.
+### Technical Stuff
+- HTML5 semantic tags (header, nav, section, etc.)
+- CSS with variables for colors and spacing
+- Flexbox for the nav menu and buttons
+- CSS Grid for the projects and about section
+- Works on phones, tablets, and computers
+- Form validation (required fields, email format)
+- Alt text on images for accessibility
 
----
+### Bonus Features I Added
+- Hover effects and animations on buttons/cards
+- Print stylesheet (hides nav/footer when printing)
 
-## Requirements
+## Challenges I Ran Into
 
-### Functional Requirements
+**Making projects line up properly** - The cards had different heights because of different text lengths. Fixed it by using flexbox on the cards and pushing the links to the bottom.
 
-Your portfolio must include **4 or more sections**:
+**Navigation underline** - Wanted that fancy sliding underline effect. Used ::after with width transition and it worked.
 
-| Section | Required Content |
-|---------|------------------|
-| **Home/Hero** | Your name, tagline, and call-to-action button |
-| **About** | Professional bio (150+ words), profile image, skills list |
-| **Projects** | Minimum 3 project cards with title, description, image, and links |
-| **Contact** | Contact form with validation attributes (name, email, message) |
+**Keeping colors consistent** - Used CSS variables so I could change colors in one place. Saved me a lot of time.
 
-### Technical Requirements
+**Mobile first** - Started with phone layout then added media queries for bigger screens. Tested on Chrome dev tools.
 
-| Requirement | Description |
-|-------------|-------------|
-| **HTML5** | Valid semantic HTML (header, nav, main, section, article, footer) |
-| **CSS3** | External stylesheet only (no inline styles) |
-| **CSS Variables** | Use custom properties for colors and spacing |
-| **Flexbox** | Use for at least one layout component |
-| **CSS Grid** | Use for at least one layout component |
-| **Responsive** | Mobile-first with minimum 3 breakpoints |
-| **Accessibility** | Alt text, form labels, color contrast, heading hierarchy |
+## Color Scheme
+- Blue (#2563eb) - Main color
+- Green (#10b981) - Accents
+- Gray (#1f2937) - Text
+- Light gray (#f3f4f6) - Backgrounds
 
-### Breakpoints Required
+## Breakpoints
+- Tablet: 768px
+- Desktop: 1024px  
+- Large desktop: 1200px
 
-```css
-/* Mobile-first base styles */
+## Bonus Features I Added
 
-/* Tablet (768px and up) */
-@media (min-width: 768px) { }
+### 1. CSS Animations and Transitions (+3%)
+Added smooth hover effects throughout the site:
+- Buttons lift up and change color when you hover over them
+- Project cards float up with a shadow effect
+- Navigation links have a sliding underline animation
+- Images zoom slightly on hover
+- Loading animation on images (shimmer effect)
 
-/* Desktop (1024px and up) */
-@media (min-width: 1024px) { }
+### 2. Print Stylesheet (+2%)
+Made the site printer-friendly:
+- Navigation, footer, and buttons disappear when printing
+- Links show their URLs in brackets after the text
+- Colors change to black and white to save ink
+- Clean layout for physical copies
 
-/* Large Desktop (1200px and up) - optional */
-@media (min-width: 1200px) { }
-```
+### 3. Extra Polish (Additional)
+- Custom scrollbar that matches the blue theme
+- Text selection color matches the site theme
+- Focus indicators for keyboard navigation
+- Smooth scrolling between sections
 
----
+**Total Bonus: +5%**
 
-## Project Structure
 
-```
-csc4035-assignment1-portfolio/
-├── index.html          # Main HTML file
-├── css/
-│   └── styles.css      # Main stylesheet
-├── images/             # Your images (profile, projects, etc.)
-├── screenshots/        # Screenshots at different breakpoints
-│   ├── mobile.png
-│   ├── tablet.png
-│   └── desktop.png
-└── README.md           # This file (update with your info)
-```
+## How to Run
+Just open index.html in any browser. No server needed.
 
----
+## Credits
 
-## Getting Started
+### Fonts
+- System font stack only (Segoe UI, Roboto, -apple-system, etc.)
+- No Google Fonts or external font libraries used
 
-1. **Clone this repository** to your local machine
-2. **Open `index.html`** in your code editor
-3. **Complete the TODO comments** in each file
-4. **Test responsiveness** using browser developer tools
-5. **Take screenshots** at mobile, tablet, and desktop sizes
-6. **Commit and push** your changes regularly
+### Images
+All images are placeholders that I replaced with my own screenshots:
+- Profile photo: Added my own picture
+- Project 1: Library Management System screenshot 
+- Project 2: Supermarket POS screenshot 
+- Project 3: Weather website screenshot 
+- Project 4: HR app screenshot 
 
----
+### Code References
+- W3Schools - reminded me how to use CSS grid syntax
+- MDN Web Docs - checked flexbox properties
+- Stack Overflow - helped me figure out the sticky header
+- CSS Tricks - guide on smooth scrolling
 
-## Grading Rubric (100 points)
+### Tools Used
+- VS Code - wrote all the code here
+- Chrome DevTools - testing responsive design
+- Firefox DevTools - double-checking everything
+- Git - version control
+- GitHub - hosting the code
 
-| Criterion | Points | Description |
-|-----------|--------|-------------|
-| **HTML Structure & Semantics** | 20 | Valid HTML5, semantic elements, proper document structure |
-| **CSS Styling & Design** | 20 | Professional design, cohesive color scheme, typography |
-| **Flexbox & Grid Usage** | 20 | Both techniques used appropriately and effectively |
-| **Responsive Design** | 20 | Mobile-first, 3+ breakpoints, no horizontal scrolling |
-| **Content & Completeness** | 10 | All sections complete with quality content |
-| **Code Quality** | 10 | Clean, organized, well-commented code |
+### Inspiration
+- Looked at some developer portfolios on YouTube for layout ideas
+- My CV document for all the content
+- Previous web dev labs from class
 
-### Automated Tests (40% of grade)
-
-The following are checked automatically on each push:
-- HTML validation (no errors)
-- Required HTML elements present
-- CSS file linked correctly
-- Required sections exist
-- Responsive meta tag present
-
----
-
-## Submission Checklist
-
-Before submitting, verify:
-
-- [ ] All 4 sections are complete (Home, About, Projects, Contact)
-- [ ] HTML validates with no errors
-- [ ] CSS uses custom properties (variables)
-- [ ] Flexbox is used for at least one component
-- [ ] CSS Grid is used for at least one component
-- [ ] Site is responsive at all breakpoints
-- [ ] All images have alt text
-- [ ] Form inputs have labels
-- [ ] Screenshots added to `/screenshots` folder
-- [ ] README updated with your information
-
----
-
-## Your Information
-
-**Name:** [Your Name]
-**Student ID:** [Your Student ID]
-**Design Theme:** [Describe your portfolio theme/style]
-
-### CSS Techniques Used
-- [ ] CSS Custom Properties
-- [ ] Flexbox
-- [ ] CSS Grid
-- [ ] Media Queries
-- [ ] Other: _______________
-
-### Challenges & Solutions
-[Describe any challenges you faced and how you solved them]
-
-### Credits
-[List any images, fonts, or resources used with attribution]
-
----
+## Checklist
+-  All 4 sections done
+-  HTML validates (checked on W3C)
+-  CSS validates
+-  CSS variables used
+-  Flexbox used (nav, buttons)
+-  Grid used (projects, about)
+-  Responsive works
+-  Alt text on all images
+-  Form labels present
+-  Screenshots folder ready
+-  Animations added (+3%)
+-  Print stylesheet added (+2%)
 
 ## Academic Integrity
+I did this myself. No copied code. No frameworks. Just plain HTML and CSS. Any resources I used are listed in the credits above.
 
-- All code must be your own work
-- No CSS frameworks or libraries allowed
-- Images must be royalty-free or your own (credit sources)
-- Plagiarism detection tools will be used
-
-**Violations result in zero marks and academic misconduct reporting.**
-
----
-
-## Extension Opportunities (Bonus: up to +10%)
-
-- Dark/light mode toggle with CSS (+3%)
-- CSS animations/transitions (+3%)
-- CSS-only hamburger menu (+2%)
-- Print stylesheet (+2%)
+**Frackson Banda**
+**ID: 2022003578**
+**Date: March 9, 2026
